@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Oswald:wght@200;300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+  background-color: ;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  width: 100%;
+  background-color: #cceeff;
+}
+
+:root {
+}
+
+.section-container {
+  background-color: ;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 70px 0px;
+  width: 95%;
+  max-width: 1300px;
+}
+
+/* header */
+.header-container {
+  position: sticky;
+  top: 0%;
+  z-index: 9999;
+  background-color: #3b5998;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
+  background-color: ;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 70px;
+}
+
+.logo-container img {
+  height: 110px;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-list {
+  gap: 50px;
+}
+
+.navbar i {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.navbar a {
+  color: black;
+  font-size: 17px;
+}
+
+.register {
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+
+.register:hover {
+  background-color: white;
+  color: grey;
+  transition: all 0.3s linear;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0px 50px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar i {
+    display: block;
+    color: black;
+  }
+
+  .navbar-list {
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: none;
+    z-index: 9999;
+    gap: 50px;
+  }
+
+  .navbar a {
+    color: aliceblue;
+  }
+
+  #toggle-menu:checked + .navbar-list {
+    display: flex;
+  }
+
+  .logo-container img {
+    height: 80px;
+  }
+}
+
+/* Hero */
+
+h1 {
+  text-align: center;
+}
+
+.slider-frame {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+  height: 400px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* About us */
+
+#about-us {
+  justify-content: space-between;
+  gap: 20px;
+  padding: 70px 50px;
+}
+
+#about-us p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1 1 50%;
+}
+
+.text-container {
+  max-width: max(40%, 300px);
+}
+
+.text-container p {
+  margin: 20px auto 20px auto;
+  text-align: center;
+  font-size: 300px;
+  font-weight: 300;
+}
+
+.primary-button {
+  background: #3b5998;
+  padding: 5px 40px;
+  border: none;
+  border-radius: 20px;
+  max-width: max(40%, 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0 auto;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.text-container h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.text-container p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.img-container {
+  background-image: url(./img/slideriphone3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 350px;
+  width: 45%;
+  height: 350px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .description-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Products */
+#products {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 40px;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+}
+
+.product-card-img {
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  font-size: 60px;
+}
+.product-card:first-child .product-card-img {
+  background-image: url(./img/iphone13pro-max-varios-sf.png);
+}
+
+.product-card:nth-child(2) .product-card-img {
+  background-image: url(./img/iphone13-sf.png);
+}
+
+.product-card:nth-child(3) .product-card-img {
+  background-image: url(./img/iphone12varios-removebg-preview.png);
+}
+
+.product-card:nth-child(4) .product-card-img {
+  background-image: url(./img/iphone12pro-removebg-preview.png);
+}
+
+.product-card:nth-child(5) .product-card-img {
+  background-image: url(./img/iphone11pro-removebg-preview.png);
+}
+
+.product-card:nth-child(6) .product-card-img {
+  background-image: url(./img/iphone11-removebg-preview.png);
+}
+
+.product-card:nth-child(7) .product-card-img {
+  background-image: url(./img/iphonexr-removebg-preview.png);
+}
+
+.product-card:nth-child(8) .product-card-img {
+  background-image: url(./img/iphone-se-removebg-preview.png);
+}
+
+.divider {
+  width: min(90%, 600px);
+  height: 3px;
+  background: black;
+}
+
+/* section auriculares */
+.section-a {
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.title-container-a {
+  display: flex;
+  justify-content: center;
+}
+
+.product-cards-container-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 40px;
+}
+
+.product-card-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+}
+
+.product-card-img-a {
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card-a:first-child .product-card-img-a {
+  background-image: url(./img/airdots3generacion-sf.png);
+}
+
+.product-card-a:nth-child(2) .product-card-img-a {
+  background-image: url(./img/AirPods_Max_Silver_PDP_Image_Position-2__en-US-300x300-removebg-preview.png);
+}
+
+.product-card-a:nth-child(3) .product-card-img-a {
+  background-image: url(./img/airpods_pro_PDP_US_1-removebg-preview.png);
+}
+
+.product-card-a:nth-child(4) .product-card-img-a {
+  background-image: url(./img/airpods2generacion-sf.png);
+}
+
+/* products fundas */
+
+.section-f {
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.title-container-f {
+  display: flex;
+  justify-content: center;
+}
+
+.product-cards-container-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 40px;
+}
+
+.product-card-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+}
+
+.product-card-img-f {
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card-f:first-child .product-card-img-f {
+  background-image: url(./img/fundaiphoneroja-removebg-preview.png);
+}
+
+.product-card-f:nth-child(2) .product-card-img-f {
+  background-image: url(./img/funda-siliconecasenegra-removebg-preview.png);
+}
+
+.product-card-f:nth-child(3) .product-card-img-f {
+  background-image: url(./img/fundasiliconarainbow-removebg-preview.png);
+}
+
+.product-card-f:nth-child(4) .product-card-img-f {
+  background-image: url(./img/fundasiliconecaseazul-removebg-preview.png);
+}
+
+@media (max-width: 992px) {
+  .product-cards-container {
+    width: 100%;
+  }
+}
+
+/* informacion */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 0px;
+}
+
+.info-section h3 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info-section p {
+  text-align: center;
+  font-size: 15px;
+  max-width: 300px;
+  margin: 1rem auto 2rem auto;
+}
+
+.fa-solid.fa-truck,
+.fa-solid.fa-thumbs-up,
+.fa-solid.fa-credit-card,
+.fa-solid.fa-comment-dots {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 300px;
+}
+
+.fa-solid.fa-truck:hover,
+.fa-solid.fa-thumbs-up:hover,
+.fa-solid.fa-credit-card:hover,
+.fa-solid.fa-comment-dots:hover {
+  color: grey;
+}
+
+@media (max-width: 490px) {
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* footer */
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: #3b5998;
+}
+
+.elementos-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1300px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.contacto h4 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.fa-brands.fa-whatsapp {
+  display: flex;
+  gap: 8px;
+}
+
+.fa-solid.fa-envelope {
+  display: flex;
+  gap: 8px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.redes h4 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+.fa-brands.fa-instagram,
+.fa-brands.fa-facebook,
+.fa-brands.fa-twitter {
+  color: black;
+  font-size: 30px;
+}
+
+.fa-brands.fa-instagram:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+  color: rgb(253, 86, 44);
+}
+
+.fa-brands.fa-facebook:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+  color: #3b5998;
+}
+
+.fa-brands.fa-twitter:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+  color: #00acee;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.ubicacion h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .elementos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .redes {
+    margin-bottom: 80px;
+  }
+}
