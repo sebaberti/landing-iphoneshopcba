@@ -267,7 +267,7 @@ h1 {
 }
 
 .img-container {
-  background-image: url(./img/slideriphone3.jpg) no-repeat center/cover;
+  background-image: url(./img/slideriphone3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
