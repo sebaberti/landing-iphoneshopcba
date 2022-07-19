@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Oswald:wght@200;300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(59, 89, 152);
+  background: linear-gradient(
+    180deg,
+    rgba(59, 89, 152, 1) 50%,
+    rgba(26, 28, 32, 1) 100%
+  );
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 50px;
+  color: rgb(29, 31, 33);
+}
+
+.title h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  font-weight: 800;
+  color: rgb(29, 31, 33);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  padding: 15px;
+  width: 300px;
+  background: rgb(29, 31, 33);
+  color: aliceblue;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+}
+
+.email {
+  border-top: 1px solid rgb(176, 176, 176);
+  border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.btn {
+  background: #3b5998;
+  color: aliceblue;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+a {
+  color: #d34b78;
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: aliceblue;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
