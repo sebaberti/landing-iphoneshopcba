@@ -93,6 +93,7 @@ body {
 .navbar a {
   color: black;
   font-size: 17px;
+  font-weight: 600;
 }
 
 .register {
@@ -243,16 +244,18 @@ h1 {
 
 .primary-button {
   background: #3b5998;
-  padding: 5px 40px;
+  padding: 5px 20px;
   border: none;
   border-radius: 20px;
-  max-width: max(40%, 300px);
+  max-width: max(40%, 150px);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto 0 auto;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .text-container h1 {
@@ -337,8 +340,28 @@ h1 {
   background-position: center;
 }
 
+.btn-products {
+  background: #3b5998;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  margin: 10px auto;
+}
+
 .section-title {
   font-size: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .product-card:first-child .product-card-img {
   background-image: url(./img/iphone13pro-max-varios-sf.png);
@@ -667,4 +690,27 @@ h1 {
   .redes {
     margin-bottom: 80px;
   }
+}
+
+/* animaciones navbar */
+
+.menu-item {
+  position: relative;
+}
+
+.navbar-list .item-link::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: aliceblue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s linear;
+}
+.navbar-list .item-link:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
