@@ -5,34 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="registro.css" />
-    <title>Document</title>
+    <title>Registro</title>
   </head>
   <body>
-    <div class="container">
-      <header class="title">
-        <h1>Hola.</h1>
-        <p>Un gusto conocerte.</p>
-      </header>
-      <main class="login">
-        <form>
-          <input type="text" name="name" id="name" placeholder="Nombre" />
-          <input
-            class="email"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Mail"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Contraseña"
-          />
-        </form>
-      </main>
-      <input type="submit" value="Sign Up" class="btn" />
-      <p>Ya tienes una cuenta? <a href="#">Iniciar sesion</a></p>
+    <div class="registro">
+      <div class="reg-text">
+        <h1>Crear Cuenta</h1>
+        <h2>
+          Comprá más rapido y llevá el control de tus pedidos ¡en un solo lugar!
+        </h2>
+      </div>
+      <form action="">
+        <div class="formulario">
+          <li>
+            <label for="nombre">Nombre y Apellido</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Ej.: Juan Perez"
+              required
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Ej.: juanperez@email.com"
+              required
+            />
+          </li>
+          <li>
+            <label for="telefono">Teléfono (opcional)</label>
+            <input type="tel" id="telefono" placeholder="Ej.: 4444-4444" />
+          </li>
+          <li>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" required />
+          </li>
+          <li>
+            <label for="confirma-contra">Confirmar contraseña</label>
+            <input type="password" id="confirma-contra" required />
+          </li>
+          <li class="checkbox">
+            <div class="check">
+              <input type="checkbox" id="comunicaciones" checked />
+              <label for="comunicaciones"
+                >Quiero recibir comunicaciones comerciales a través del
+                email</label
+              >
+            </div>
+            <div class="check">
+              <input type="checkbox" id="requisitos" required />
+              <label for="requisitos">Acepto terminos y condiciónes</label>
+            </div>
+          </li>
+          <li>
+            <input type="submit" value="Crear Cuenta" class="btn" />
+          </li>
+        </div>
+        <div class="cuenta">
+          <p>
+            ¿Ya tenés una cuenta?
+            <a href="./inicio.html" target="_blank">Iniciá Sesión</a>
+          </p>
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -9,91 +9,112 @@
   font-family: "Nunito", sans-serif;
 }
 
-.container {
+html {
+  scroll-behavior: smooth;
+}
+
+.registro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0 auto;
   background: rgb(59, 89, 152);
   background: linear-gradient(
     180deg,
     rgba(59, 89, 152, 1) 50%,
     rgba(26, 28, 32, 1) 100%
   );
+  height: 100vh;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
+.reg-text h1 {
   text-align: center;
-  padding-bottom: 50px;
-  color: rgb(29, 31, 33);
-}
-
-.title h1 {
-  font-size: 50px;
-  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 5px;
   font-weight: 800;
   color: rgb(29, 31, 33);
 }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+.reg-text h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-form {
+.formulario label {
+  width: 700px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.formulario li {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
+  padding: 10px 30px;
 }
 
-input {
-  border: none;
-  padding: 15px;
-  width: 300px;
+.formulario input {
+  width: 700px;
+  max-width: 80%;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 0 auto;
   background: rgb(29, 31, 33);
   color: aliceblue;
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  text-align: left;
 }
-
 input:focus {
+  border: 1.5px solid aliceblue;
+  margin: 0 auto;
   outline: none;
 }
 
-.email {
-  border-top: 1px solid rgb(176, 176, 176);
-  border-bottom: 1px solid rgb(176, 176, 176);
-}
-
-.btn {
-  background: #3b5998;
+.formulario .btn {
+  background: rgb(59, 89, 152);
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  border: none;
   color: aliceblue;
-  padding: 0.8rem;
-  margin-bottom: 0.5rem;
   font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-a {
-  color: #d34b78;
-  text-decoration: none;
-}
-
-input::placeholder {
-  color: aliceblue;
 }
 
 .btn:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+}
+
+.formulario .checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.check label {
+  width: 500px;
+  font-size: 0.7rem;
+}
+
+.check input[type="checkbox"] {
+  width: 15px;
+}
+
+.cuenta {
+  margin: 30px 0;
+  text-align: center;
+}
+.cuenta a {
+  text-decoration: none;
+  color: #d34b78;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: aliceblue;
 }
