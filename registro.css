@@ -71,6 +71,7 @@ input:focus {
   border: none;
   color: aliceblue;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn:hover {
