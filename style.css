@@ -610,7 +610,6 @@ h1 {
   align-items: center;
   text-align: center;
   gap: 20px;
-  width: 300px;
 }
 
 .contacto h4 {
@@ -636,7 +635,6 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 300px;
 }
 
 .redes h4 {
