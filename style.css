@@ -17,14 +17,14 @@ html {
 
 body {
   width: 100%;
-  background-color: #cceeff;
+  background-color: #192d38;
 }
 
-:root {
+#cceeff :root {
 }
 
 .section-container {
-  background-color: ;
+  background-color: #192d38;
 }
 
 .section {
@@ -229,7 +229,8 @@ h1 {
 
 #about-us p {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
+  color: aliceblue;
 }
 
 .description-container {
@@ -251,10 +252,10 @@ h1 {
 }
 
 .primary-button {
-  background: #3b5998;
+  background: #ad2e24;
   padding: 5px 20px;
-  border: none;
-  border-radius: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
   max-width: max(40%, 150px);
   display: flex;
   justify-content: center;
@@ -263,18 +264,14 @@ h1 {
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: aliceblue;
 }
 
 .text-container h1 {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
-}
-
-.text-container p {
-  font-size: 15px;
-  font-weight: 300;
+  color: #ad2e24;
 }
 
 .img-container {
@@ -318,9 +315,17 @@ h1 {
   gap: 10px;
 }
 
+.section-container-i {
+  background: #466060;
+}
+
 .title-container {
   display: flex;
   justify-content: center;
+}
+
+.section-container h3 {
+  color: aliceblue;
 }
 
 .product-cards-container {
@@ -350,26 +355,32 @@ h1 {
 
 .btn-products {
   background: #3b5998;
-  padding: 5px 15px;
-  border: none;
-  border-radius: 20px;
+  padding: 2px 15px;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 17px;
   text-decoration: none;
-  color: black;
+  color: aliceblue;
   margin: 10px auto;
 }
 
 .section-title {
-  font-size: 60px;
+  font-size: 50px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.section-title-i {
+  color: aliceblue;
 }
 .product-card:first-child .product-card-img {
   background-image: url(./img/iphone13pro-max-varios-sf.png);
@@ -410,6 +421,9 @@ h1 {
 }
 
 /* section auriculares */
+.section-container-a {
+  background: #466060;
+}
 .section-a {
   flex-direction: column;
   gap: 10px;
@@ -419,6 +433,7 @@ h1 {
 .title-container-a {
   display: flex;
   justify-content: center;
+  color: aliceblue;
 }
 
 .product-cards-container-a {
@@ -463,6 +478,9 @@ h1 {
 }
 
 /* products fundas */
+.section-container-f {
+  background: #466060;
+}
 
 .section-f {
   flex-direction: column;
@@ -473,6 +491,10 @@ h1 {
 .title-container-f {
   display: flex;
   justify-content: center;
+}
+
+.section-title-f {
+  color: aliceblue;
 }
 
 .product-cards-container-f {
@@ -526,11 +548,11 @@ h1 {
 .info-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1300px;
   width: 95%;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 0px;
   margin: 0 auto;
 }
 
@@ -545,13 +567,14 @@ h1 {
   font-size: 15px;
   max-width: 300px;
   margin: 1rem auto 2rem auto;
+  color: aliceblue;
 }
 
 .fa-solid.fa-truck,
 .fa-solid.fa-thumbs-up,
 .fa-solid.fa-credit-card,
 .fa-solid.fa-comment-dots {
-  color: black;
+  color: aliceblue;
   font-size: 40px;
   margin-bottom: 2rem;
 }
@@ -569,7 +592,7 @@ h1 {
 .fa-solid.fa-thumbs-up:hover,
 .fa-solid.fa-credit-card:hover,
 .fa-solid.fa-comment-dots:hover {
-  color: grey;
+  color: #ad2e24;
 }
 
 @media (max-width: 490px) {
@@ -705,6 +728,11 @@ h1 {
   }
 }
 
+@media (max-width: 385px) {
+  .ubicacion {
+    width: auto;
+  }
+}
 /* animaciones navbar */
 
 .menu-item {
